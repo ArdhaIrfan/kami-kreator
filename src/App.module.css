@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-100: #720902;
+  --primary-90: #960E05;
+  --primary-80: #AE1409;
+  --primary-70: #C81D12;
+  --primary-60: #DF2D21;
+  --primary-50: #E9493E;
+  --primary-40: #F2685F;
+  --primary-30: #F6867E;
+  --primary-20: #FAAEA9;
+  --primary-10: #FFDCDA;
+  --secondary-100: #4B1E06;
+  --secondary-90: #652B0B;
+  --secondary-80: #873B11;
+  --secondary-70: #B35420;
+  --secondary-60: #D3713C;
+  --secondary-50: #DC8250;
+  --secondary-40: #E8996D;
+  --secondary-30: #EDB393;
+  --secondary-20: #F6D5C4;
+  --secondary-10: #FAEAE2;
+  --tertiary-100: #251C19;
+  --tertiary-90: #433631;
+  --tertiary-80: #564640;
+  --tertiary-70: #6C5750;
+  --tertiary-60: #846C64;
+  --tertiary-50: #A4887F;
+  --tertiary-40: #C0A39A;
+  --tertiary-30: #E1C4BA;
+  --tertiary-20: #F2DDD6;
+  --tertiary-10: #FCF4F1;
+  --neutral-100: #0F0F0F;
+  --neutral-90: #2C2C2C;
+  --neutral-80: #484848;
+  --neutral-70: #606060;
+  --neutral-60: #7D7D7D;
+  --neutral-50: #9A9A9A;
+  --neutral-40: #B6B6B6;
+  --neutral-30: #DBDBDB;
+  --neutral-20: #F5F5F5;
+  --neutral-10: #FAFAFA;
+
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.buttonPrimary {
+  font-size: 16px;
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 999px;
+  background: var(--primary-90);
+  color: var(--neutral-10);
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.buttonPrimary:hover {
+  background: var(--primary-70);
+}
+
+p,
+p.medium,
+a {
+  color: var(--neutral-90);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+  letter-spacing: -0.14px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+p.small {
+  font-size: 12px;
+}
+
+p.regularLarge {
+  /* Body/Regular Large Text */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+  letter-spacing: -0.16px;
+}
+
+p.regular,
+p.regularMedium {
+  /* Body/Regular Large Text */
+  font-size: 14px;
+  letter-spacing: -0.14px;
+}
+
+p.regularSmall {
+  /* Body/Regular Small Text */
+  font-size: 12px;
+  letter-spacing: -0.12px;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section,
+.footer {
+  padding: 100px;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}
+
+.sectionTitle {
+  color: var(--secondary-70);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary-100);
+  padding: 0px 100px;
+  align-items: center;
+}
+
+.navbar img {
+  height: 32px;
+  width: auto;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar .ul a {
+  color: var(--neutral-10);
+  text-decoration: none;
+  line-height: 460%;
+  transition: all .2s;
+  padding: 0px 30px;
+}
+
+.navbar .ul a:hover {
+  color: var(--secondary-10);
+  background-color: var(--secondary-90);
+}
+
+/* ============================= HERO SECTION ============================= */
+.hero,
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+
+.hero {
+  height: 80vh;
+  padding-top: 60px;
+}
+
+.hero .content,
+.about .content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero img.big,
+.about img {
+  width: 50%;
+}
+
+.hero img.small {
+  display: none;
+}
+
+.buttonWrapper {
+  line-height: 400%;
+}
+
+/* ============================= ABOUT SECTION ============================= */
+.about {
+  background-color: var(--neutral-20);
+  height: auto;
+}
+
+.about img.small {
+  display: none;
+}
+
+/* ============================= PROGRAM SECTION ============================= */
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.program .titleWrapper,
+.achievement .titleWrapper {
+  align-items: center;
+  text-align: center;
+}
+
+.program .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.program .card {
+  display: inline-flex;
+  padding: 28px 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border-radius: 16px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.program .card:nth-child(2),
+.program .card:nth-child(4) {
+  margin-top: 60px;
+}
+
+.program .card img {
+  width: 100%;
+}
+
+.program .card h5 {
+  color: var(--primary-70);
+}
+
+.program .programDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.promotion,
+.mentoring,
+.volunteering,
+.internship,
+.community {
+  background-color: var(--primary-80);
+  border-radius: 0px 999px 999px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-left: -100px;
+  margin-right: 40px;
+  padding: 100px;
+}
+
+.mentoring,
+.internship {
+  border-radius: 999px 0px 0px 999px;
+  margin-left: 40px;
+  margin-right: -100px;
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.promotion .content,
+.mentoring .content,
+.volunteering .content,
+.internship .content,
+.community .content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--neutral-10);
+}
+
+.promotion .content p,
+.mentoring .content p,
+.volunteering .content p,
+.internship .content p,
+.community .content p {
+  color: var(--neutral-10);
+}
+
+.promotion img,
+.mentoring img,
+.volunteering img,
+.internship img,
+.community img {
+  width: 320px;
+  height: 100%;
+}
+
+/* ============================= ACHIEVEMENT SECTION ============================= */
+.achievement {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-20);
+  gap: 80px;
+}
+
+.achievement .stat {
+  display: inline-flex;
+  gap: 60px;
+  background-color: var(--primary-70);
+  border-radius: 999px;
+  padding: 40px 80px;
+  align-items: center;
+  justify-content: center;
+  color: var(--neutral-10);
+  margin: auto;
+}
+
+.achievement .stat div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.achievement .review {
+  display: flex;
+  gap: 80px;
+}
+
+.achievement .review .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.achievement .content div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.achievement .review .content img {
+  width: 80%;
+}
+
+.achievement .comments {
+  display: flex;
+  gap: 40px;
+  align-items: start;
+}
+
+.achievement .comments img {
+  width: 120px;
+  border-radius: 999px;
+}
+
+.achievement .comments .comment1,
+.achievement .comments .comment2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+  width: 80%;
+  padding: 40px;
+  border-radius: 40px;
+  border-top: 8px solid var(--secondary-60);
+  background: var(--neutral-10, #FAFAFA);
+
+  /* Shadow/Card */
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+.achievement .comments .comment2 {
+  margin-top: 100px;
+}
+
+/* ============================= FIND US SECTION ============================= */
+.findUs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.findUs h2 {
+  text-align: center;
+}
+
+.findUs .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.findUs .content .social,
+.findUs .content .formal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.findUs .content>div>div a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.findUs .content h5,
+.findUs .content svg {
+  color: var(--primary-70);
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.findUs .content svg {
+  font-size: 32px;
+}
+
+/* ============================= FOOTER ============================= */
+.footer {
+  background-color: var(--secondary-100);
+  color: var(--neutral-10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer p,
+.footer .li,
+.footer a {
+  color: var(--neutral-10);
+  text-decoration: none;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .content .company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 30%;
+}
+
+.footer .content .navigations {
+  display: flex;
+  gap: 140px;
+}
+
+.footer .company img {
+  width: 60%;
+}
+
+.footer .company .social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer .company svg {
+  font-size: 28px;
+}
+
+.footer .navigations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .navigations ul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 12px;
+  text-align: end;
+}
+
+.footer .navigations .title {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+/* ================ RESPONSIVENESS ================ */
+@media only screen and (max-width: 992px) {
+
+  /* GENERAL */
+  .section {
+    padding: 100px 90px;
+  }
+
+  /* HERO SECTION */
+
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  /* GENERAL */
+  .section, .footer {
+    padding: 100px 20px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    height: auto;
+  }
+
+  .hero img.big {
+    display: none;
+  }
+
+  .hero img.small {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  /* ABOUT SECTION */
+  .about img.big {
+    display: none;
+  }
+
+  .about img.small {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  /* PROGRAM SECTION */
+  .program .cards {
+    flex-direction: column;
+  }
+
+  .program .cards .card {
+    margin-top: 0px;
+  }
+
+  .promotion,
+  .mentoring,
+  .volunteering,
+  .internship,
+  .community {
+    flex-direction: column;
+    margin-left: -20px;
+    margin-right: 10px;
+    border-radius: 0px 80px 80px 0px;
+  }
+
+  .mentoring,
+  .internship {
+    margin-left: 10px;
+    margin-right: -20px;
+    border-radius: 80px 0px 0px 80px;
+  }
+
+  .promotion img,
+  .mentoring img,
+  .volunteering img,
+  .internship img,
+  .community img {
+    width: 60vw;
+  }
+
+  /* ACHIEVEMENT SECTION */
+  .achievement .stat {
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 100px;
+    padding: 80px 40px;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-10);
+    margin: auto;
+  }
+
+  .achievement .review {
+    flex-direction: column;
+  }
+
+  .achievement .comments {
+    flex-direction: column;
+  }
+
+  .achievement .comments .comment1,
+  .achievement .comments .comment2 {
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    padding: 40px 24px;
+    border-radius: 40px;
+    margin: auto;
+  }
+
+  .achievement .comments .comment2 {
+    margin-top: 0px;
+  }
+
+  /* FIND US SECTION */
+  .findUs .content .social,
+  .findUs .content .formal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .findUs .content h5,
+  .findUs .content svg {
+    font-size: 16px;
+  }
+
+  .findUs .content svg {
+    font-size: 24px;
+  }
+
+  /* FOOTER */
+  .footer .content {
+    flex-direction: column;
+    gap: 40px
+  }
+
+  .footer .content .company {
+    max-width: 100%;
+  }
+
+  .footer .content .navigations {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer .company svg {
+    font-size: 32px;
+  }
+  
+  .footer .navigations ul {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .copyright {
+    text-align: center;
+  }
+}
